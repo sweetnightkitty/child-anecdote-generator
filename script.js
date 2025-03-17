@@ -1,4 +1,15 @@
-const script = "I joined " + name + " while they were " + areaActivity;
+const submitForm = document.querySelector("button");
+const anecdoteDiv = document.querySelector(".anecdote");
+
+const script = "I joined " + childName + " while they were " + areaActivity + customActivity;
+
+submitForm.addEventListener("click", () => {
+    //get child name and assign to childName
+    //get area value -> and then run function that will generate the correct areaActivity message.
+    //Get custom sentence about what they were specifically doing in that area and then store as customActivity
+    //print scrip to div.anecdote
+})
+
 
 //Function that gets a keyword from the user input, and then outputs a 
 //custom message to area variable.
@@ -29,4 +40,8 @@ if(area == "art") {
 
 if(area == "language") {
     areaActivity = "reading a book.";
+}
+
+if(area == "physical-play") {
+    areaActivity = "engaged in physical play.";
 }
